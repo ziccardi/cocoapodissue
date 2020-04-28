@@ -1,0 +1,16 @@
+PODS:
+  - AeroGear-UPS-Client (3.1.0)
+
+DEPENDENCIES:
+  - AeroGear-UPS-Client
+
+SPEC REPOS:
+  trunk:
+    - AeroGear-UPS-Client
+
+SPEC CHECKSUMS:
+  AeroGear-UPS-Client: 8782402021c17b1140e58663bf4cdb869f3210f5
+
+PODFILE CHECKSUM: f83a7f6d741d9600f9d0dab8a8913dd17f3bc6a4
+
+COCOAPODS: 1.9.1

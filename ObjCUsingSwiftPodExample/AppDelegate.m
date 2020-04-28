@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AeroGearPush/AeroGearPush-Swift.h>
 
 @interface AppDelegate ()
 

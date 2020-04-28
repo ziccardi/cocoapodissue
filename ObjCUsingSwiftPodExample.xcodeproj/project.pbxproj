@@ -14,9 +14,12 @@
 		B3B8A14D2458CC1D0087D679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B8A14C2458CC1D0087D679 /* Assets.xcassets */; };
 		B3B8A1502458CC1D0087D679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B8A14E2458CC1D0087D679 /* LaunchScreen.storyboard */; };
 		B3B8A1532458CC1D0087D679 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B8A1522458CC1D0087D679 /* main.m */; };
+		B3B8A15B2458CD210087D679 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8A15A2458CD210087D679 /* File.swift */; };
+		D17D5A643A28504DFA68B42C /* libPods-ObjCUsingSwiftPodExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C7FE548FF2EC2F2FE9015 /* libPods-ObjCUsingSwiftPodExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A470832952942F23B4B0425D /* Pods-ObjCUsingSwiftPodExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCUsingSwiftPodExample.release.xcconfig"; path = "Target Support Files/Pods-ObjCUsingSwiftPodExample/Pods-ObjCUsingSwiftPodExample.release.xcconfig"; sourceTree = "<group>"; };
 		B3B8A13D2458CC190087D679 /* ObjCUsingSwiftPodExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCUsingSwiftPodExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B8A1402458CC190087D679 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B3B8A1412458CC190087D679 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,10 @@
 		B3B8A14F2458CC1D0087D679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3B8A1512458CC1D0087D679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3B8A1522458CC1D0087D679 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3B8A1592458CD210087D679 /* ObjCUsingSwiftPodExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCUsingSwiftPodExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		B3B8A15A2458CD210087D679 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		B63C7FE548FF2EC2F2FE9015 /* libPods-ObjCUsingSwiftPodExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjCUsingSwiftPodExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C0DB0B2C90E117ED83EAB3 /* Pods-ObjCUsingSwiftPodExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCUsingSwiftPodExample.debug.xcconfig"; path = "Target Support Files/Pods-ObjCUsingSwiftPodExample/Pods-ObjCUsingSwiftPodExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17D5A643A28504DFA68B42C /* libPods-ObjCUsingSwiftPodExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6DC562557AA11E0E5570A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B63C7FE548FF2EC2F2FE9015 /* libPods-ObjCUsingSwiftPodExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		516334BC922D1BD6D93C02D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3C0DB0B2C90E117ED83EAB3 /* Pods-ObjCUsingSwiftPodExample.debug.xcconfig */,
+				A470832952942F23B4B0425D /* Pods-ObjCUsingSwiftPodExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B3B8A1342458CC190087D679 = {
 			isa = PBXGroup;
 			children = (
 				B3B8A13F2458CC190087D679 /* ObjCUsingSwiftPodExample */,
 				B3B8A13E2458CC190087D679 /* Products */,
+				516334BC922D1BD6D93C02D1 /* Pods */,
+				1A6DC562557AA11E0E5570A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +100,8 @@
 				B3B8A14E2458CC1D0087D679 /* LaunchScreen.storyboard */,
 				B3B8A1512458CC1D0087D679 /* Info.plist */,
 				B3B8A1522458CC1D0087D679 /* main.m */,
+				B3B8A15A2458CD210087D679 /* File.swift */,
+				B3B8A1592458CD210087D679 /* ObjCUsingSwiftPodExample-Bridging-Header.h */,
 			);
 			path = ObjCUsingSwiftPodExample;
 			sourceTree = "<group>";
@@ -83,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3B8A1562458CC1D0087D679 /* Build configuration list for PBXNativeTarget "ObjCUsingSwiftPodExample" */;
 			buildPhases = (
+				5916B33B3CA60A7E07FEF7F6 /* [CP] Check Pods Manifest.lock */,
 				B3B8A1392458CC190087D679 /* Sources */,
 				B3B8A13A2458CC190087D679 /* Frameworks */,
 				B3B8A13B2458CC190087D679 /* Resources */,
@@ -107,6 +138,7 @@
 				TargetAttributes = {
 					B3B8A13C2458CC190087D679 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -141,11 +173,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5916B33B3CA60A7E07FEF7F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjCUsingSwiftPodExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B3B8A1392458CC190087D679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B8A15B2458CD210087D679 /* File.swift in Sources */,
 				B3B8A1482458CC190087D679 /* ViewController.m in Sources */,
 				B3B8A1422458CC190087D679 /* AppDelegate.m in Sources */,
 				B3B8A1532458CC1D0087D679 /* main.m in Sources */,
@@ -287,8 +345,10 @@
 		};
 		B3B8A1572458CC1D0087D679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3C0DB0B2C90E117ED83EAB3 /* Pods-ObjCUsingSwiftPodExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZVJ3RR523;
 				INFOPLIST_FILE = ObjCUsingSwiftPodExample/Info.plist;
@@ -298,14 +358,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.aerogear.ObjCUsingSwiftPodExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCUsingSwiftPodExample/ObjCUsingSwiftPodExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		B3B8A1582458CC1D0087D679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A470832952942F23B4B0425D /* Pods-ObjCUsingSwiftPodExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZVJ3RR523;
 				INFOPLIST_FILE = ObjCUsingSwiftPodExample/Info.plist;
@@ -315,6 +380,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.aerogear.ObjCUsingSwiftPodExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCUsingSwiftPodExample/ObjCUsingSwiftPodExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
